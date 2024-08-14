@@ -22,7 +22,7 @@ def main():
     entry_btn.grid(row=0, column=1)
 
     text_list = tk.Listbox(frame)
-    text_list.grid(row=1, column=0)
+    text_list.grid(row=1, column=0, columnspan=2, sticky='ew')
 
     root.mainloop()
 
