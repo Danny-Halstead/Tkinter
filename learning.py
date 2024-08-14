@@ -24,7 +24,7 @@ def main():
     entry = ttk.Entry(frame)
     entry.grid(row=0, column=0, sticky='ew')
 
-    entry.bind("<Return>", lambda event: add_to_list())
+    entry.bind("<Return>", add_to_list)
 
     entry_btn = ttk.Button(frame, text='Add', command = add_to_list)
     entry_btn.grid(row=0, column=1)
@@ -42,7 +42,7 @@ def main():
     entry = tk.Entry(frame2)
     entry.grid(row=0, column=0, sticky='ew')
 
-    entry.bind("<Return>", lambda event: add_to_list())
+    entry.bind("<Return>", add_to_list)
 
     entry_btn = tk.Button(frame2, text='Add', command=add_to_list)
     entry_btn.grid(row=0, column=1)
