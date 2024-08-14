@@ -11,7 +11,7 @@ def main():
     entry.grid(row=0, column=0)
 
     entry_btn = tk.Button(frame, text='Add')
-    entry_btn.grid(row=0, column=0)
+    entry_btn.grid(row=0, column=1)
 
     root.mainloop()
 
