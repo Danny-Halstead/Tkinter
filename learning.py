@@ -13,6 +13,9 @@ def main():
     entry_btn = tk.Button(frame, text='Add')
     entry_btn.grid(row=0, column=1)
 
+    text_list = tk.Listbox(frame)
+    text_list.grid(row=1, column=0)
+
     root.mainloop()
 
 if __name__ == "__main__":
