@@ -11,11 +11,11 @@ def main():
             entry.delete(0, tk.END)
 
     root.columnconfigure(0, weight=1)
-    root.columnconfigure(1, weight=1)   #for frame 2
+    root.columnconfigure(1, weight=3)   #for frame 2
     root.rowconfigure(0, weight=1)
 
     frame = tk.Frame(root)
-    frame.grid(row=0, column=0, sticky='nsew')
+    frame.grid(row=0, column=0, sticky='nsew', padx=5, pady=5)
 
     frame.columnconfigure(0, weight=1)
     frame.rowconfigure(1, weight=1)
@@ -33,7 +33,7 @@ def main():
 
     #Frame 2 starts here
     frame2 = tk.Frame(root)
-    frame2.grid(row=0, column=1, sticky='nsew')
+    frame2.grid(row=0, column=1, sticky='nsew', padx=5, pady=5)
 
     frame2.columnconfigure(0, weight=1)
     frame2.rowconfigure(1, weight=1)
