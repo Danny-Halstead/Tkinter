@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 
 def main():
     root = tk.Tk()
@@ -20,12 +21,12 @@ def main():
     frame.columnconfigure(0, weight=1)
     frame.rowconfigure(1, weight=1)
 
-    entry = tk.Entry(frame)
+    entry = ttk.Entry(frame)
     entry.grid(row=0, column=0, sticky='ew')
 
     entry.bind("<Return>", lambda event: add_to_list())
 
-    entry_btn = tk.Button(frame, text='Add', command = add_to_list)
+    entry_btn = ttk.Button(frame, text='Add', command = add_to_list)
     entry_btn.grid(row=0, column=1)
 
     text_list = tk.Listbox(frame)
