@@ -11,6 +11,7 @@ def main():
             entry.delete(0, tk.END)
 
     root.columnconfigure(0, weight=1)
+    root.columnconfigure(1, weight=1)   #for frame 2
     root.rowconfigure(0, weight=1)
 
     frame = tk.Frame(root)
@@ -29,6 +30,25 @@ def main():
 
     text_list = tk.Listbox(frame)
     text_list.grid(row=1, column=0, columnspan=2, sticky='nsew')
+
+    #Frame 2 starts here
+    frame2 = tk.Frame(root)
+    frame2.grid(row=0, column=1, sticky='nsew')
+
+    frame2.columnconfigure(0, weight=1)
+    frame2.rowconfigure(1, weight=1)
+
+    entry = tk.Entry(frame2)
+    entry.grid(row=0, column=0, sticky='ew')
+
+    entry.bind("<Return>", lambda event: add_to_list())
+
+    entry_btn = tk.Button(frame2, text='Add', command=add_to_list)
+    entry_btn.grid(row=0, column=1)
+
+    text_list = tk.Listbox(frame2)
+    text_list.grid(row=1, column=0, columnspan=2, sticky='nsew')
+    #Frame 2 ends here
 
     root.mainloop()
 
