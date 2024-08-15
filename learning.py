@@ -1,6 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
 
+class Application:
+    def __init__(self):
+        root = tk.Tk()
+        root.title('Simple App')
+        root.mainloop()
+
+'''
 def main():
     root = tk.Tk()
     root.title('Simple App')
@@ -58,6 +65,7 @@ def main():
     #Frame 2 ends here
 
     root.mainloop()
+'''
 
 if __name__ == "__main__":
     main()
