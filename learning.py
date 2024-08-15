@@ -41,7 +41,7 @@ class InputForm(ttk.Frame):
         self.text_list = tk.Listbox(self)
         self.text_list.grid(row=1, column=0, columnspan=3, sticky='nsew')
 
-    def add_to_list(self, event=None):
+    def add_to_list(self, _event=None):
         text = self.entry.get()
         if text:
             self.text_list.insert(tk.END, text)
