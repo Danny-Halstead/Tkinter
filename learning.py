@@ -1,11 +1,14 @@
 import tkinter as tk
 from tkinter import ttk
 
-class Application:
+class Application(tk.Tk):
     def __init__(self):
-        root = tk.Tk()
-        root.title('Simple App')
-        root.mainloop()
+        super().__init__()
+        self.title('Simple App')
+
+
+app = Application()
+app.mainloop()
 
 '''
 def main():
@@ -66,6 +69,3 @@ def main():
 
     root.mainloop()
 '''
-
-if __name__ == "__main__":
-    main()
